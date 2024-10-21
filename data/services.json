@@ -1,0 +1,544 @@
+{
+  "articles": [
+    {
+      "available": false,
+      "ordinal": 203,
+      "vin": "TMBJR0NX4RY183174",
+      "salesPartNumber": "NET.600.005.T",
+      "masterSalesPartNumber": "NET.600.005",
+      "scenarioType": null,
+      "name": "Care Connect - Remote Access",
+      "description": "Care Connect - Remote Access is the right choice for even more convenience. Your personal assistants support you in every situation and provide you with all the key information you need regarding your mobility.",
+      "headline": "content_missing_NET.600.005-article-headline",
+      "highlights": [
+        "content_missing_NET.600.005-article-highlight-1",
+        "content_missing_NET.600.005-article-highlight-2",
+        "content_missing_NET.600.005-article-highlight-3"
+      ],
+      "icon": {
+        "reference": "skoda-connect-service-package-care-connect",
+        "color": "icon-color-grey",
+        "imageUrl": null
+      },
+      "images": [
+        {
+          "large": "https://shop.skoda-connect.com/img/large/article-image-CC.png",
+          "medium": "https://shop.skoda-connect.com/img/medium/article-image-CC.png",
+          "small": "https://shop.skoda-connect.com/img/small/article-image-CC.png",
+          "thumbnail": "https://shop.skoda-connect.com/img/thumbs/article-image-CC.png"
+        },
+        {
+          "large": "https://shop.skoda-connect.com/img/large/content_missing_NET.600.005-article-image-2",
+          "medium": "https://shop.skoda-connect.com/img/medium/content_missing_NET.600.005-article-image-2",
+          "small": "https://shop.skoda-connect.com/img/small/content_missing_NET.600.005-article-image-2",
+          "thumbnail": "https://shop.skoda-connect.com/img/thumbs/content_missing_NET.600.005-article-image-2"
+        },
+        {
+          "large": "https://shop.skoda-connect.com/img/large/content_missing_NET.600.005-article-image-3",
+          "medium": "https://shop.skoda-connect.com/img/medium/content_missing_NET.600.005-article-image-3",
+          "small": "https://shop.skoda-connect.com/img/small/content_missing_NET.600.005-article-image-3",
+          "thumbnail": "https://shop.skoda-connect.com/img/thumbs/content_missing_NET.600.005-article-image-3"
+        }
+      ],
+      "damImages": [],
+      "type": {
+        "furtherInformation": " ",
+        "productDetails": " ",
+        "articleType": "MOD"
+      },
+      "products": [
+        {
+          "salesPartNumber": "NET.000.003.AA",
+          "productId": "trip_statistic_v1",
+          "name": "Driving Data",
+          "description": "\"Driving data\" provides you history of driving in MyŠkoda App.",
+          "icon": {
+            "reference": "skoda-service__trip-statistics",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-driving-data.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-driving-data.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-driving-data.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.004.AA",
+          "productId": "statusreport_v1",
+          "name": "Vehicle Status",
+          "description": "All needed data are accessible from MyŠkoda App.",
+          "icon": {
+            "reference": "skoda-service__vehicle-status",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-rvs.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-rvs.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-rvs.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.008.AA",
+          "productId": "speedalert_v1",
+          "name": "Pay to Fuel",
+          "description": "With Pay to Fuel, you can pay for fueling at supported petrol stations across Europe.",
+          "icon": {
+            "reference": "skoda-service__speed-notification",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-P2F-small.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-P2F-small.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-P2F-small.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.009.AA",
+          "productId": "geofence_v1",
+          "name": "Pay to Park",
+          "description": "With Pay to Park, you can pay for parking at supported parking locations across Europe.",
+          "icon": {
+            "reference": "skoda-service__area-notification",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-P2P-small.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-P2P-small.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-P2P-small.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.010.AA",
+          "productId": "dwap",
+          "name": "Online Anti-Theft Alarm",
+          "description": "Be notified always your vehicle finds itself in trouble.",
+          "icon": {
+            "reference": "skoda-service__online-anti-theft-alarm",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-dwa.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-dwa.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-dwa.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.011.AA",
+          "productId": "carfinder_v1",
+          "name": "Parking Position",
+          "description": "\"Last Parking Position\" lets you know where you parked your car.",
+          "icon": {
+            "reference": "skoda-service__parking-position",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-lpp.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-lpp.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-lpp.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.015.AA",
+          "productId": "rlu_v1",
+          "name": "Lock & Unlock including Car Access function",
+          "description": "Remotely you can lock or unlock your vehicle using the MyŠkoda App.",
+          "icon": {
+            "reference": "skoda-service__lock-and-unlock",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-rlu.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-rlu.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-rlu.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.016.AA",
+          "productId": "rhonk_v1",
+          "name": "Honk & Flash",
+          "description": "Remotely you can make your vehicle honk and flash using the MyŠkoda App.",
+          "icon": {
+            "reference": "skoda-service__honk-and-flash",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-rhf.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-rhf.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-rhf.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.017.AA",
+          "productId": "rheating_v1",
+          "name": "Online Auxiliary Heater",
+          "description": "The “Remote Auxiliary Heater” enables you to set heating or ventilation in certain time frames or manually.",
+          "icon": {
+            "reference": "skoda-service__auxiliary-heater",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-rah.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-rah.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-rah.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.100.024.AA",
+          "productId": "digicert_v1",
+          "name": "Digital Certificate",
+          "description": "Whether you want to sell your vehicle and eliminate the distrust of the potential buyer or you just want to access detailed information about your vehicle, the Digital Certificate is the ideal solution for you. With the Digital Certificate, you can display an overview of selected vehicle information through the MyŠkoda App (e.g. vehicle identification, technical specification, equipment, mileage and service history). This overview can be then generated into a form of PDF certificate and shared with potential used car buyers.",
+          "icon": {
+            "reference": "skoda-help__contract-information",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-digicert.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-digicert.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-digicert.png"
+            }
+          ],
+          "damImages": []
+        }
+      ],
+      "term": {
+        "code": "1m",
+        "localized": "1 month"
+      },
+      "price": {
+        "currency": {
+          "isoCode": "CZK",
+          "name": "Tschechische Krone",
+          "symbol": "Kč"
+        },
+        "gross": 0,
+        "grossStrikethrough": null,
+        "net": 0,
+        "netStrikethrough": null,
+        "tax": 0,
+        "taxStrikethrough": null,
+        "totalAmount": 0,
+        "taxRate": 21,
+        "taxExempt": false,
+        "businessTaxExempt": false,
+        "privateTaxExempt": false,
+        "validFrom": "2018-06-24",
+        "validTo": null,
+        "validFromStrikethrough": null,
+        "validToStrikethrough": null,
+        "discount": null,
+        "appliedVouchers": null
+      },
+      "activeSubscriptionInMaster": false,
+      "articleLicense": {
+        "licenseStatus": {
+          "code": "LICENSED",
+          "localized": "Active"
+        },
+        "activationDate": "2024-05-30T11:50:00Z",
+        "expirationDate": "2027-05-30T11:50:00Z",
+        "predictedActivationDate": null,
+        "predictedExpirationDate": null,
+        "prolongableFrom": "2027-05-28T11:50:00Z",
+        "errorStatusMBB": null
+      },
+      "licenseProfile": "LPPackage00005925",
+      "dependencies": [],
+      "addOnOnly": false,
+      "fillUpOrBundle": null,
+      "recommendations": [],
+      "compensation": null,
+      "legalDocuments": [
+        {
+          "name": "termsOfUse",
+          "app": "SkodaConnect",
+          "localizedName": "Terms of Use",
+          "majorVersion": 10,
+          "minorVersion": 2,
+          "consented": false,
+          "html": "https://consent.vwgroup.io/consent/v1/texts/SkodaConnect/CZ/en/termsOfUse/latest/html",
+          "pdf": "https://consent.vwgroup.io/consent/v1/texts/SkodaConnect/CZ/en/termsOfUse/latest/pdf",
+          "type": "TERMS_AND_CONDITIONS",
+          "error": null
+        },
+        {
+          "name": "dataprivacy",
+          "app": "SkodaConnect",
+          "localizedName": "content_missing_cs-checkout-text-checkbox-gtc-dataprivacy",
+          "majorVersion": null,
+          "minorVersion": null,
+          "consented": false,
+          "html": "https://consent.vwgroup.io/consent/v1/texts/SkodaConnect/CZ/en/dataprivacy/latest/html",
+          "pdf": "https://consent.vwgroup.io/consent/v1/texts/SkodaConnect/CZ/en/dataprivacy/latest/pdf",
+          "type": "DATA_PRIVACY",
+          "error": null
+        }
+      ],
+      "consentDocuments": [],
+      "filterReason": null,
+      "includedArticles": null,
+      "isUsedCarTeaser": false
+    },
+    {
+      "available": false,
+      "ordinal": 204,
+      "vin": "TMBJR0NX4RY183174",
+      "salesPartNumber": "NET.600.004.T",
+      "masterSalesPartNumber": "NET.600.004",
+      "scenarioType": null,
+      "name": "Infotainment Online",
+      "description": "Keep up-to-date on the move with the Infotainment Online services from Škoda Connect. Search for interesting destinations in your area, get up-to-the-minute traffic information from the internet, and much more besides.",
+      "headline": "content_missing_NET.600.004-article-headline",
+      "highlights": [
+        "content_missing_NET.600.004-article-highlight-1",
+        "content_missing_NET.600.004-article-highlight-2",
+        "content_missing_NET.600.004-article-highlight-3"
+      ],
+      "icon": {
+        "reference": "skoda-connect-service-package-infotainment-online",
+        "color": "icon-color-green",
+        "imageUrl": null
+      },
+      "images": [
+        {
+          "large": "https://shop.skoda-connect.com/img/large/article-image-IO.png",
+          "medium": "https://shop.skoda-connect.com/img/medium/article-image-IO.png",
+          "small": "https://shop.skoda-connect.com/img/small/article-image-IO.png",
+          "thumbnail": "https://shop.skoda-connect.com/img/thumbs/article-image-IO.png"
+        },
+        {
+          "large": "https://shop.skoda-connect.com/img/large/content_missing_NET.600.004-article-image-2",
+          "medium": "https://shop.skoda-connect.com/img/medium/content_missing_NET.600.004-article-image-2",
+          "small": "https://shop.skoda-connect.com/img/small/content_missing_NET.600.004-article-image-2",
+          "thumbnail": "https://shop.skoda-connect.com/img/thumbs/content_missing_NET.600.004-article-image-2"
+        },
+        {
+          "large": "https://shop.skoda-connect.com/img/large/content_missing_NET.600.004-article-image-3",
+          "medium": "https://shop.skoda-connect.com/img/medium/content_missing_NET.600.004-article-image-3",
+          "small": "https://shop.skoda-connect.com/img/small/content_missing_NET.600.004-article-image-3",
+          "thumbnail": "https://shop.skoda-connect.com/img/thumbs/content_missing_NET.600.004-article-image-3"
+        }
+      ],
+      "damImages": [],
+      "type": {
+        "furtherInformation": " ",
+        "productDetails": " ",
+        "articleType": "MOD"
+      },
+      "products": [
+        {
+          "salesPartNumber": "NET.000.097.AA",
+          "productId": "onlinespeech_v2",
+          "name": "Online Voice-Control",
+          "description": "Online Voice-Control allows you to use extra features which will make the voice control even more comfortable.",
+          "icon": {
+            "reference": "skoda-service__gracenote",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-online-POI-search-speech.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-online-POI-search-speech.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-online-POI-search-speech.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.112.AA",
+          "productId": "fpi_v4",
+          "name": "Petrol Stations",
+          "description": "Let's get a quick overview of nearby petrol stations, their opening hours and up-to-date fuel prices.",
+          "icon": {
+            "reference": "skoda-service__refuel",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-petrol-stations.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-petrol-stations.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-petrol-stations.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.113.AA",
+          "productId": "navdb_download_v1",
+          "name": "Online Map Update - Download",
+          "description": "With the \"Online Map Update\" you'll have up-to-date data for your navigation system.",
+          "icon": {
+            "reference": "skoda-help__map-update",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-maps.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-maps.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-maps.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.115.AA",
+          "productId": "onlinerouting_v2",
+          "name": "Online Route Calculation",
+          "description": "Thanks to this service, the best possible route to your destination is calculated in real time and allows the navigation system to briefly react to any inconveniences which occur on the roads.",
+          "icon": {
+            "reference": "skoda-help__online-route-import",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-tourimp.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-tourimp.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-tourimp.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.117.AA",
+          "productId": "parkinfo_v4",
+          "name": "Parking Spaces",
+          "description": "Let's check parking spaces around your vehicle's current location in an easy, stress-free way. The feature displays the overall capacity along with the current usage, opening hours and prices as well.\n",
+          "icon": {
+            "reference": "skoda-service__parking-info",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-parking-spaces.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-parking-spaces.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-parking-spaces.png"
+            }
+          ],
+          "damImages": []
+        },
+        {
+          "salesPartNumber": "NET.000.120.AA",
+          "productId": "traffic-online_v3",
+          "name": "Online Traffic Information",
+          "description": "With the “Online Traffic Information” you get always up-to-date traffic information so you can save your time and avoid stressful staing in traffic jams.",
+          "icon": {
+            "reference": "skoda-service__traffic",
+            "imageUrl": null
+          },
+          "images": [
+            {
+              "large": "https://shop.skoda-connect.com/img/large/product-image-online-traffic-information.png",
+              "medium": "https://shop.skoda-connect.com/img/medium/product-image-online-traffic-information.png",
+              "small": "https://shop.skoda-connect.com/img/small/product-image-online-traffic-information.png"
+            }
+          ],
+          "damImages": []
+        }
+      ],
+      "term": {
+        "code": "1m",
+        "localized": "1 month"
+      },
+      "price": {
+        "currency": {
+          "isoCode": "CZK",
+          "name": "Tschechische Krone",
+          "symbol": "Kč"
+        },
+        "gross": 0,
+        "grossStrikethrough": null,
+        "net": 0,
+        "netStrikethrough": null,
+        "tax": 0,
+        "taxStrikethrough": null,
+        "totalAmount": 0,
+        "taxRate": 21,
+        "taxExempt": false,
+        "businessTaxExempt": false,
+        "privateTaxExempt": false,
+        "validFrom": "2018-06-24",
+        "validTo": null,
+        "validFromStrikethrough": null,
+        "validToStrikethrough": null,
+        "discount": null,
+        "appliedVouchers": null
+      },
+      "activeSubscriptionInMaster": false,
+      "articleLicense": {
+        "licenseStatus": {
+          "code": "LICENSED",
+          "localized": "Active"
+        },
+        "activationDate": "2024-05-30T11:50:00Z",
+        "expirationDate": "2027-05-30T11:50:00Z",
+        "predictedActivationDate": null,
+        "predictedExpirationDate": null,
+        "prolongableFrom": "2027-05-28T11:50:00Z",
+        "errorStatusMBB": null
+      },
+      "licenseProfile": "LPPackage00003986",
+      "dependencies": [],
+      "addOnOnly": false,
+      "fillUpOrBundle": null,
+      "recommendations": [],
+      "compensation": null,
+      "legalDocuments": [
+        {
+          "name": "termsOfUse",
+          "app": "SkodaConnect",
+          "localizedName": "Terms of Use",
+          "majorVersion": 10,
+          "minorVersion": 2,
+          "consented": false,
+          "html": "https://consent.vwgroup.io/consent/v1/texts/SkodaConnect/CZ/en/termsOfUse/latest/html",
+          "pdf": "https://consent.vwgroup.io/consent/v1/texts/SkodaConnect/CZ/en/termsOfUse/latest/pdf",
+          "type": "TERMS_AND_CONDITIONS",
+          "error": null
+        },
+        {
+          "name": "dataprivacy",
+          "app": "SkodaConnect",
+          "localizedName": "content_missing_cs-checkout-text-checkbox-gtc-dataprivacy",
+          "majorVersion": null,
+          "minorVersion": null,
+          "consented": false,
+          "html": "https://consent.vwgroup.io/consent/v1/texts/SkodaConnect/CZ/en/dataprivacy/latest/html",
+          "pdf": "https://consent.vwgroup.io/consent/v1/texts/SkodaConnect/CZ/en/dataprivacy/latest/pdf",
+          "type": "DATA_PRIVACY",
+          "error": null
+        }
+      ],
+      "consentDocuments": [],
+      "filterReason": null,
+      "includedArticles": null,
+      "isUsedCarTeaser": false
+    }
+  ]
+}
