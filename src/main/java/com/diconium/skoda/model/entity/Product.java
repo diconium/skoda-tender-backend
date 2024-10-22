@@ -1,11 +1,8 @@
 package com.diconium.skoda.model.entity;
 
-
 import jakarta.persistence.*;
-
 import java.util.HashSet;
 import java.util.Set;
-
 
 @Entity
 @Table(name = "Products")

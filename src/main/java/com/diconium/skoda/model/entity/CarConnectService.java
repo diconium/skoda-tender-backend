@@ -1,10 +1,7 @@
 package com.diconium.skoda.model.entity;
 
-
 import jakarta.persistence.*;
-
 import java.time.LocalDateTime;
-
 
 @Entity
 @Table(name = "Cars_ConnectServices")
@@ -80,5 +77,3 @@ public class CarConnectService {
         this.endDate = endDate;
     }
 }
-
-

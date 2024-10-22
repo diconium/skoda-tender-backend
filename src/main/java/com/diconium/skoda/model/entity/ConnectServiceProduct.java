@@ -1,8 +1,6 @@
 package com.diconium.skoda.model.entity;
 
-
 import jakarta.persistence.*;
-
 
 @Entity
 @Table(name = "ConnectServices_Products")

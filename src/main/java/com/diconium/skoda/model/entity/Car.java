@@ -1,8 +1,6 @@
 package com.diconium.skoda.model.entity;
 
-
 import jakarta.persistence.*;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -33,8 +31,7 @@ public class Car {
     @JoinTable(
             name = "Cars_ConnectServices",
             joinColumns = @JoinColumn(name = "car_vin"),
-            inverseJoinColumns = @JoinColumn(name = "connect_service_id")
-    )
+            inverseJoinColumns = @JoinColumn(name = "connect_service_id"))
     private Set<ConnectService> connectServices = new HashSet<>();
 
     public String getVin() {

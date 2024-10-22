@@ -1,12 +1,9 @@
 package com.diconium.skoda.model.entity;
 
-
 import jakarta.persistence.*;
-
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Set;
-
 
 @Entity
 @Table(name = "ConnectServices")
@@ -38,8 +35,7 @@ public class ConnectService {
     @JoinTable(
             name = "ConnectServices_Products",
             joinColumns = @JoinColumn(name = "connect_service_id"),
-            inverseJoinColumns = @JoinColumn(name = "product_id")
-    )
+            inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> products = new HashSet<>();
 
     public Integer getId() {

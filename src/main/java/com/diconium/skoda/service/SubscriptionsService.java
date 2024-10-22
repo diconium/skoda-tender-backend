@@ -6,6 +6,7 @@ public interface SubscriptionsService {
 
     /**
      * Retrieves all services for a given car VIN.
+     *
      * @param vin the car's VIN number
      * @return a list of services associated with the car
      */

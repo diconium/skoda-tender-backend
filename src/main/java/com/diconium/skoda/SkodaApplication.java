@@ -9,5 +9,4 @@ public class SkodaApplication {
     public static void main(final String[] args) {
         SpringApplication.run(SkodaApplication.class, args);
     }
-
 }

@@ -6,7 +6,6 @@ import com.diconium.skoda.model.entity.CarConnectService;
 import com.diconium.skoda.model.entity.Product;
 import com.diconium.skoda.model.entity.User;
 import com.diconium.skoda.repository.CarConnectServiceRepository;
-
 import java.util.Comparator;
 import java.util.List;
 
@@ -42,29 +41,17 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
                                         product.getId(),
                                         product.getName(),
                                         product.getDescription(),
-                                        product.getImage()
-                                ))
+                                        product.getImage()))
                                 .toList(),
                         carConnectService.getStatus(),
                         carConnectService.getStartDate().toString(),
-                        carConnectService.getEndDate().toString()
-                ))
+                        carConnectService.getEndDate().toString()))
                 .toList();
 
         // Create and return SubscriptionsDto
         return new SubscriptionsDto(
-                new UserDto(
-                        user.getId(),
-                        user.getEmail(),
-                        user.getUsername()
-                ),
-                new CarDto(
-                        car.getVin(),
-                        car.getBrand(),
-                        car.getModel(),
-                        car.getYear()
-                ),
-                subscriptionDtos
-        );
+                new UserDto(user.getId(), user.getEmail(), user.getUsername()),
+                new CarDto(car.getVin(), car.getBrand(), car.getModel(), car.getYear()),
+                subscriptionDtos);
     }
 }

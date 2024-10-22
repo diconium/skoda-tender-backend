@@ -2,7 +2,6 @@ package com.diconium.skoda.model.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
-
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -36,7 +35,8 @@ public class ConnectServiceProductId implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         final ConnectServiceProductId that = (ConnectServiceProductId) o;
-        return Objects.equals(getConnectServiceId(), that.getConnectServiceId()) && Objects.equals(getProductId(), that.getProductId());
+        return Objects.equals(getConnectServiceId(), that.getConnectServiceId())
+                && Objects.equals(getProductId(), that.getProductId());
     }
 
     @Override
