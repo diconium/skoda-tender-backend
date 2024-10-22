@@ -19,23 +19,23 @@ public class ConnectServiceProductId implements Serializable {
         return connectServiceId;
     }
 
-    public void setConnectServiceId(Integer serviceId) {
-        this.connectServiceId = serviceId;
+    public void setConnectServiceId(final Integer connectServiceId) {
+        this.connectServiceId = connectServiceId;
     }
 
     public Integer getProductId() {
         return productId;
     }
 
-    public void setProductId(Integer productId) {
+    public void setProductId(final Integer productId) {
         this.productId = productId;
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(final Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ConnectServiceProductId that = (ConnectServiceProductId) o;
+        final ConnectServiceProductId that = (ConnectServiceProductId) o;
         return Objects.equals(getConnectServiceId(), that.getConnectServiceId()) && Objects.equals(getProductId(), that.getProductId());
     }
 

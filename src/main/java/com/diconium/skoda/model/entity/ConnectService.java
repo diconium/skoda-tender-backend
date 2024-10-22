@@ -46,7 +46,7 @@ public class ConnectService {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(final Integer id) {
         this.id = id;
     }
 
@@ -54,7 +54,7 @@ public class ConnectService {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -62,7 +62,7 @@ public class ConnectService {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(final String description) {
         this.description = description;
     }
 
@@ -70,7 +70,7 @@ public class ConnectService {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(final String image) {
         this.image = image;
     }
 
@@ -78,7 +78,7 @@ public class ConnectService {
         return contractLength;
     }
 
-    public void setContractLength(Integer contractLength) {
+    public void setContractLength(final Integer contractLength) {
         this.contractLength = contractLength;
     }
 
@@ -86,7 +86,7 @@ public class ConnectService {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(final BigDecimal price) {
         this.price = price;
     }
 
@@ -94,7 +94,7 @@ public class ConnectService {
         return cars;
     }
 
-    public void setCars(Set<Car> cars) {
+    public void setCars(final Set<Car> cars) {
         this.cars = cars;
     }
 
@@ -102,7 +102,7 @@ public class ConnectService {
         return products;
     }
 
-    public void setProducts(Set<Product> products) {
+    public void setProducts(final Set<Product> products) {
         this.products = products;
     }
 }

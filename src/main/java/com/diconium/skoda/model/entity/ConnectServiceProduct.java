@@ -25,15 +25,15 @@ public class ConnectServiceProduct {
         return id;
     }
 
-    public void setId(ConnectServiceProductId id) {
+    public void setId(final ConnectServiceProductId id) {
         this.id = id;
     }
 
-    public ConnectService getService() {
+    public ConnectService getConnectService() {
         return connectService;
     }
 
-    public void setService(ConnectService connectService) {
+    public void setConnectService(final ConnectService connectService) {
         this.connectService = connectService;
     }
 
@@ -41,7 +41,7 @@ public class ConnectServiceProduct {
         return product;
     }
 
-    public void setProduct(Product product) {
+    public void setProduct(final Product product) {
         this.product = product;
     }
 }

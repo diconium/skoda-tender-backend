@@ -31,12 +31,12 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
                 .sorted(Comparator.comparing(s -> s.getId().getConnectServiceId()))
                 .map(carConnectService -> new SubscriptionDto(
                         carConnectService.getId().getConnectServiceId(),
-                        carConnectService.getService().getName(),
-                        carConnectService.getService().getDescription(),
-                        carConnectService.getService().getImage(),
-                        carConnectService.getService().getContractLength(),
-                        carConnectService.getService().getPrice().floatValue(),
-                        carConnectService.getService().getProducts().stream()
+                        carConnectService.getConnectService().getName(),
+                        carConnectService.getConnectService().getDescription(),
+                        carConnectService.getConnectService().getImage(),
+                        carConnectService.getConnectService().getContractLength(),
+                        carConnectService.getConnectService().getPrice().floatValue(),
+                        carConnectService.getConnectService().getProducts().stream()
                                 .sorted(Comparator.comparing(Product::getId))
                                 .map(product -> new ProductsDto(
                                         product.getId(),

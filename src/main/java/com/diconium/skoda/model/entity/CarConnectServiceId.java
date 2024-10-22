@@ -19,23 +19,23 @@ public class CarConnectServiceId implements Serializable {
         return connectServiceId;
     }
 
-    public void setConnectServiceId(Integer serviceId) {
-        this.connectServiceId = serviceId;
+    public void setConnectServiceId(final Integer connectServiceId) {
+        this.connectServiceId = connectServiceId;
     }
 
     public String getCarVin() {
         return carVin;
     }
 
-    public void setCarVin(String carVin) {
+    public void setCarVin(final String carVin) {
         this.carVin = carVin;
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(final Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CarConnectServiceId that = (CarConnectServiceId) o;
+        final CarConnectServiceId that = (CarConnectServiceId) o;
         return Objects.equals(getConnectServiceId(), that.getConnectServiceId()) && Objects.equals(getCarVin(), that.getCarVin());
     }
 

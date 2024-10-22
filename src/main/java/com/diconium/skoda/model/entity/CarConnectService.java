@@ -36,7 +36,7 @@ public class CarConnectService {
         return id;
     }
 
-    public void setId(CarConnectServiceId id) {
+    public void setId(final CarConnectServiceId id) {
         this.id = id;
     }
 
@@ -44,15 +44,15 @@ public class CarConnectService {
         return car;
     }
 
-    public void setCar(Car car) {
+    public void setCar(final Car car) {
         this.car = car;
     }
 
-    public ConnectService getService() {
+    public ConnectService getConnectService() {
         return connectService;
     }
 
-    public void setService(ConnectService connectService) {
+    public void setConnectService(final ConnectService connectService) {
         this.connectService = connectService;
     }
 
@@ -60,7 +60,7 @@ public class CarConnectService {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(final String status) {
         this.status = status;
     }
 
@@ -68,7 +68,7 @@ public class CarConnectService {
         return startDate;
     }
 
-    public void setStartDate(LocalDateTime startDate) {
+    public void setStartDate(final LocalDateTime startDate) {
         this.startDate = startDate;
     }
 
@@ -76,7 +76,7 @@ public class CarConnectService {
         return endDate;
     }
 
-    public void setEndDate(LocalDateTime endDate) {
+    public void setEndDate(final LocalDateTime endDate) {
         this.endDate = endDate;
     }
 }

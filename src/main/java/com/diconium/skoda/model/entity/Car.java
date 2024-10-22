@@ -41,7 +41,7 @@ public class Car {
         return vin;
     }
 
-    public void setVin(String vin) {
+    public void setVin(final String vin) {
         this.vin = vin;
     }
 
@@ -49,15 +49,15 @@ public class Car {
         return brand;
     }
 
-    public void setBrand(String make) {
-        this.brand = make;
+    public void setBrand(final String brand) {
+        this.brand = brand;
     }
 
     public String getModel() {
         return model;
     }
 
-    public void setModel(String model) {
+    public void setModel(final String model) {
         this.model = model;
     }
 
@@ -65,7 +65,7 @@ public class Car {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(final int year) {
         this.year = year;
     }
 
@@ -73,15 +73,15 @@ public class Car {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(final User user) {
         this.user = user;
     }
 
-    public Set<ConnectService> getServices() {
+    public Set<ConnectService> getConnectServices() {
         return connectServices;
     }
 
-    public void setServices(Set<ConnectService> connectServices) {
+    public void setConnectServices(final Set<ConnectService> connectServices) {
         this.connectServices = connectServices;
     }
 }

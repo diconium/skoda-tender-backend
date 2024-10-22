@@ -31,7 +31,7 @@ public class Product {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(final Integer id) {
         this.id = id;
     }
 
@@ -39,7 +39,7 @@ public class Product {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -47,7 +47,7 @@ public class Product {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(final String description) {
         this.description = description;
     }
 
@@ -55,15 +55,15 @@ public class Product {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(final String image) {
         this.image = image;
     }
 
-    public Set<ConnectService> getServices() {
+    public Set<ConnectService> getConnectServices() {
         return connectServices;
     }
 
-    public void setServices(Set<ConnectService> connectServices) {
+    public void setConnectServices(final Set<ConnectService> connectServices) {
         this.connectServices = connectServices;
     }
 }

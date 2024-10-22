@@ -9,6 +9,5 @@ import java.util.List;
 
 @Repository
 public interface CarConnectServiceRepository extends JpaRepository<CarConnectService, CarConnectServiceId> {
-    // Custom query method to find all services by car VIN
     List<CarConnectService> findByCarVin(String vin);
 }
