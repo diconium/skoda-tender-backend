@@ -1,0 +1,156 @@
+{
+  "subscriptions": [
+    {
+      "name": "Pay to Park",
+      "category": "APP",
+      "status": "LICENSED",
+      "teaser": false,
+      "expiredAt": "2123-06-03T11:01:00Z",
+      "includedServices": [
+        {
+          "name": "Pay to Park",
+          "description": "content_missing_NET.100.034.AA-product-description"
+        }
+      ],
+      "salesNumber": "NET.600.095.A",
+      "description": "Are you tired of parking machines on the streets or pulling out your phone every time you want to park? Are you confused by various parking zone permits and rates with every city having a different approach? Pay to Park serves as a solution to these issues by connecting all available parking locations around Europe and putting them in the MyŠkoda app on your phone or the infotainment in your car. Search, select and pay for the parking from your car, and whether you need more or less time to park, you can manage your parking session remotely from your phone. And what's the best about it? Pay to park is already included in your Škoda Care Connect package! ",
+      "imageLink": "https://shop.skoda-connect.com/img/large/pay-to-park-image.png"
+    },
+    {
+      "name": "Traffication",
+      "category": "APP",
+      "status": "LICENSED",
+      "teaser": false,
+      "expiredAt": "2025-05-30T11:50:00Z",
+      "includedServices": [
+        {
+          "name": "Traffication",
+          "description": "The app increases your security by providing traffic-related warnings from the vicinity of the vehicle without the need for running navigation app."
+        }
+      ],
+      "salesNumber": "NET.600.061.A",
+      "description": "The app increases your security by providing traffic-related warnings from the vicinity of the vehicle without the need for running navigation app.",
+      "imageLink": "https://shop.skoda-connect.com/img/large/article-c2x.png"
+    },
+    {
+      "name": "Pay to Fuel",
+      "category": "APP",
+      "status": "LICENSED",
+      "teaser": false,
+      "expiredAt": "2123-06-03T11:02:00Z",
+      "includedServices": [
+        {
+          "name": "Pay to Fuel",
+          "description": "content_missing_NET.100.039.AA-product-description"
+        }
+      ],
+      "salesNumber": "NET.600.119.A",
+      "description": "Introducing Pay to Fuel - your ultimate solution for hassle-free refueling. Imagine a world where you never have to worry about running out of fuel or dealing with long queues at the gas station. With Pay to Fuel, it's all taken care of. Your car will notify you when your tank is running low, guide you to the nearest fuel station, and even handle the payments and receipts. \nSimply register and activate the service through MyŠkoda Essentials app, and let your car do the rest. Say goodbye to stress and hello to convenience with Pay to Fuel, included in your Škoda Connect package.",
+      "imageLink": "https://shop.skoda-connect.com/img/large/Pay2Fuel_retouched.png"
+    },
+    {
+      "name": "Ambient Lighting – Additional Colours",
+      "category": "FOD",
+      "status": "EXPIRED",
+      "teaser": false,
+      "expiredAt": "2024-07-03T11:01:33Z",
+      "includedServices": [
+        {
+          "name": "content_missing_NET.000.138.AA-product-name",
+          "description": "content_missing_NET.000.138.AA-product-description"
+        }
+      ],
+      "salesNumber": "NET.600.107.L",
+      "description": "Experience ultimate comfort thanks to the interior lights. LED ambient lighting including foot area illumination can offer you up to thirty appealing colour options.",
+      "imageLink": "https://shop.skoda-connect.com/img/large/abmbient-lightning-aditional-colours.png"
+    },
+    {
+      "name": "Care Connect - Remote Access",
+      "category": "MOD",
+      "status": "LICENSED",
+      "teaser": false,
+      "expiredAt": "2027-05-30T11:50:00Z",
+      "includedServices": [
+        {
+          "name": "Driving Data",
+          "description": "\"Driving data\" provides you history of driving in MyŠkoda App."
+        },
+        {
+          "name": "Vehicle Status",
+          "description": "All needed data are accessible from MyŠkoda App."
+        },
+        {
+          "name": "Pay to Fuel",
+          "description": "With Pay to Fuel, you can pay for fueling at supported petrol stations across Europe."
+        },
+        {
+          "name": "Pay to Park",
+          "description": "With Pay to Park, you can pay for parking at supported parking locations across Europe."
+        },
+        {
+          "name": "Online Anti-Theft Alarm",
+          "description": "Be notified always your vehicle finds itself in trouble."
+        },
+        {
+          "name": "Parking Position",
+          "description": "\"Last Parking Position\" lets you know where you parked your car."
+        },
+        {
+          "name": "Lock & Unlock including Car Access function",
+          "description": "Remotely you can lock or unlock your vehicle using the MyŠkoda App."
+        },
+        {
+          "name": "Honk & Flash",
+          "description": "Remotely you can make your vehicle honk and flash using the MyŠkoda App."
+        },
+        {
+          "name": "Online Auxiliary Heater",
+          "description": "The “Remote Auxiliary Heater” enables you to set heating or ventilation in certain time frames or manually."
+        },
+        {
+          "name": "Digital Certificate",
+          "description": "Whether you want to sell your vehicle and eliminate the distrust of the potential buyer or you just want to access detailed information about your vehicle, the Digital Certificate is the ideal solution for you. With the Digital Certificate, you can display an overview of selected vehicle information through the MyŠkoda App (e.g. vehicle identification, technical specification, equipment, mileage and service history). This overview can be then generated into a form of PDF certificate and shared with potential used car buyers."
+        }
+      ],
+      "salesNumber": "NET.600.005.A",
+      "description": "Care Connect - Remote Access is the right choice for even more convenience. Your personal assistants support you in every situation and provide you with all the key information you need regarding your mobility.",
+      "imageLink": "https://shop.skoda-connect.com/img/large/article-image-CC.png"
+    },
+    {
+      "name": "Infotainment Online",
+      "category": "MOD",
+      "status": "LICENSED",
+      "teaser": false,
+      "expiredAt": "2027-05-30T11:50:00Z",
+      "includedServices": [
+        {
+          "name": "Online Voice-Control",
+          "description": "Online Voice-Control allows you to use extra features which will make the voice control even more comfortable."
+        },
+        {
+          "name": "Petrol Stations",
+          "description": "Let's get a quick overview of nearby petrol stations, their opening hours and up-to-date fuel prices."
+        },
+        {
+          "name": "Online Map Update - Download",
+          "description": "With the \"Online Map Update\" you'll have up-to-date data for your navigation system."
+        },
+        {
+          "name": "Online Route Calculation",
+          "description": "Thanks to this service, the best possible route to your destination is calculated in real time and allows the navigation system to briefly react to any inconveniences which occur on the roads."
+        },
+        {
+          "name": "Parking Spaces",
+          "description": "Let's check parking spaces around your vehicle's current location in an easy, stress-free way. The feature displays the overall capacity along with the current usage, opening hours and prices as well.\n"
+        },
+        {
+          "name": "Online Traffic Information",
+          "description": "With the “Online Traffic Information” you get always up-to-date traffic information so you can save your time and avoid stressful staing in traffic jams."
+        }
+      ],
+      "salesNumber": "NET.600.004.A",
+      "description": "Keep up-to-date on the move with the Infotainment Online services from Škoda Connect. Search for interesting destinations in your area, get up-to-the-minute traffic information from the internet, and much more besides.",
+      "imageLink": "https://shop.skoda-connect.com/img/large/article-image-IO.png"
+    }
+  ]
+}
