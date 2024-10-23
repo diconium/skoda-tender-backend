@@ -8,7 +8,7 @@
              "secrets": [{
 				"name": "backendappsecret",
 				"valueFrom": "arn:aws:secretsmanager:eu-central-1:195275646331:secret:backendappsecret-uD1jYp"
-			}]
+			}],
             "portMappings": [
                 {
                     "name": "80",
