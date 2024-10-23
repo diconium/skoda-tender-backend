@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:195275646331:task-definition/skoda-backend",
+    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:195275646331:task-definition/skoda-backend:10",
     "containerDefinitions": [
         {
             "name": "backendapp",
