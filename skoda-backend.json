@@ -40,7 +40,7 @@
         }
     ],
     "family": "skoda-backend",
-    "executionRoleArn": "arn:aws:iam::195275646331:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::195275646331:role/skoda-tender-ecs-task-execution-role",
     "networkMode": "awsvpc",
     "revision": 2,
     "volumes": [],
