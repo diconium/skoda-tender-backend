@@ -8,6 +8,7 @@ on:
     branches:
       - main
       - dev
+      - backend-cicd
 
 env:
   AWS_REGION: eu-central-1
