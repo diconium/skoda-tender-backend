@@ -7,9 +7,10 @@ import com.diconium.skoda.model.entity.CarConnectService;
 import com.diconium.skoda.model.entity.Product;
 import com.diconium.skoda.model.entity.User;
 import com.diconium.skoda.repository.CarConnectServiceRepository;
+import org.springframework.stereotype.Service;
+
 import java.util.Comparator;
 import java.util.List;
-import org.springframework.stereotype.Service;
 
 @Service
 public class SubscriptionsServiceImpl implements SubscriptionsService {
@@ -22,7 +23,6 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
 
     @Override
     public SubscriptionsDto getAllServicesForVin(final String vin) {
-        // Fetch all CarConnectService entities by VIN
         final List<CarConnectService> carConnectServices = carConnectServiceRepository.findByCarVin(vin);
 
         if (carConnectServices.isEmpty()) {
@@ -32,7 +32,6 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
         final Car car = carConnectServices.getFirst().getCar();
         final User user = carConnectServices.getFirst().getCar().getUser();
 
-        // Map CarConnectService entities to SubscriptionDto
         final List<SubscriptionDto> subscriptionDtos = carConnectServices.stream()
                 .sorted(Comparator.comparing(s -> s.getId().getConnectServiceId()))
                 .map(carConnectService -> new SubscriptionDto(
@@ -55,7 +54,6 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
                         carConnectService.getEndDate().toString()))
                 .toList();
 
-        // Create and return SubscriptionsDto
         return new SubscriptionsDto(
                 new UserDto(user.getId(), user.getEmail(), user.getUsername()),
                 new CarDto(car.getVin(), car.getBrand(), car.getModel(), car.getYear()),
