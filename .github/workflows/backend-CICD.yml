@@ -14,7 +14,7 @@ env:
   ECR_REPOSITORY: skoda_backend
   ECS_SERVICE: skoda-backend
   ECS_CLUSTER: skoda-tender-cluster
-  ECS_TASK_DEFINITION: skoda-backend                                            
+  ECS_TASK_DEFINITION: skoda-backend:2                                           
   CONTAINER_NAME: backendapp
 
 
