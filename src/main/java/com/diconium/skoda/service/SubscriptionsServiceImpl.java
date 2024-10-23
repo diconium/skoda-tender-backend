@@ -1,15 +1,15 @@
 package com.diconium.skoda.service;
 
+import com.diconium.skoda.exception.VinNotFoundException;
 import com.diconium.skoda.model.dto.*;
 import com.diconium.skoda.model.entity.Car;
 import com.diconium.skoda.model.entity.CarConnectService;
 import com.diconium.skoda.model.entity.Product;
 import com.diconium.skoda.model.entity.User;
 import com.diconium.skoda.repository.CarConnectServiceRepository;
-import org.springframework.stereotype.Service;
-
 import java.util.Comparator;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 @Service
 public class SubscriptionsServiceImpl implements SubscriptionsService {
@@ -24,6 +24,11 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
     public SubscriptionsDto getAllServicesForVin(final String vin) {
         // Fetch all CarConnectService entities by VIN
         final List<CarConnectService> carConnectServices = carConnectServiceRepository.findByCarVin(vin);
+
+        if (carConnectServices.isEmpty()) {
+            throw new VinNotFoundException(vin);
+        }
+
         final Car car = carConnectServices.getFirst().getCar();
         final User user = carConnectServices.getFirst().getCar().getUser();
 
