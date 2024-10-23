@@ -1,13 +1,8 @@
 package com.diconium.skoda.controller;
 
-import static org.mockito.ArgumentMatchers.anyString;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-
 import com.diconium.skoda.exception.VinNotFoundException;
 import com.diconium.skoda.model.dto.*;
 import com.diconium.skoda.service.SubscriptionsService;
-import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -16,6 +11,12 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+
+import java.util.List;
+
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(SubscriptionsController.class)
 class SubscriptionsControllerTest {
@@ -41,7 +42,7 @@ class SubscriptionsControllerTest {
                 12,
                 99.99f,
                 List.of(productDto),
-                "active",
+                "Active",
                 "2021-01-01",
                 "2022-01-01");
 
