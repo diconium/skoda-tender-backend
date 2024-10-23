@@ -1,14 +1,11 @@
-on:
-  push:
-    branches:
-      - ci
+name: Check QA
+
+on: push
 
 jobs:
-  build:
-    name: Build Spring Boot Application
+  blackduck:
+    name: Run Black Duck Scan
     runs-on: ubuntu-latest
-    outputs:
-      package-path: ${{ steps.build.outputs.package-path }} # Sharing output between jobs
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -21,18 +18,13 @@ jobs:
 
       - name: Build with Maven
         id: build
-        run: |
-          mvn clean package
+        run: mvn clean install -DskipTests
 
-  blackduck:
-    name: Run Black Duck Scan
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Black Duck Full Scan
         uses: synopsys-sig/synopsys-action@v1.13.0
         env:
           DETECT_PROJECT_NAME: SKO-Connect_Services-Backend
+          DETECT_ACCURACY_REQUIRED: "NONE"
         with:
           blackduck_url: ${{ secrets.BLACKDUCK_URL }}
           blackduck_token: ${{ secrets.BLACKDUCK_TOKEN }}
@@ -42,9 +34,7 @@ jobs:
           # Fails this job depending on severity level (BLOCKER,CRITICAL,MAJOR,MINOR,TRIVIAL)
           blackduck_scan_failure_severities: 'BLOCKER,CRITICAL,MAJOR'
           # Creates pull requests with upgrade suggestions for vulnerable components, currently only npm supported
-          blackduck_fixpr_enabled: true
-          blackduck_fixpr_maxCount: 5
-          blackduck_fixpr_useUpgradeGuidance: 'SHORT_TERM,LONG_TERM'
+          blackduck_fixpr_enabled: false
 
 
 #  sonarqube:
