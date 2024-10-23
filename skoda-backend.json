@@ -1,10 +1,14 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:195275646331:task-definition/skoda-backend:2",
+    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:195275646331:task-definition/skoda-backend",
     "containerDefinitions": [
         {
             "name": "backendapp",
             "image": "195275646331.dkr.ecr.eu-central-1.amazonaws.com/skoda_backend:skoda_backend-latest",
             "cpu": 0,
+             "secrets": [{
+				"name": "backendappsecret",
+				"valueFrom": "arn:aws:secretsmanager:eu-central-1:195275646331:secret:backendappsecret-uD1jYp"
+			}]
             "portMappings": [
                 {
                     "name": "80",
