@@ -7,10 +7,9 @@ import com.diconium.skoda.model.entity.CarConnectService;
 import com.diconium.skoda.model.entity.Product;
 import com.diconium.skoda.model.entity.User;
 import com.diconium.skoda.repository.CarConnectServiceRepository;
-import org.springframework.stereotype.Service;
-
 import java.util.Comparator;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 @Service
 public class SubscriptionsServiceImpl implements SubscriptionsService {
@@ -43,7 +42,7 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
                         carConnectService.getConnectService().getPrice().floatValue(),
                         carConnectService.getConnectService().getProducts().stream()
                                 .sorted(Comparator.comparing(Product::getId))
-                                .map(product -> new ProductsDto(
+                                .map(product -> new ProductDto(
                                         product.getId(),
                                         product.getName(),
                                         product.getDescription(),

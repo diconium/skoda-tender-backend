@@ -9,7 +9,7 @@ public record SubscriptionDto(
         String imageLink,
         int length,
         float price,
-        List<ProductsDto> includedServices,
+        List<ProductDto> includedServices,
         String status,
         String startDate,
         String endDate) {}
