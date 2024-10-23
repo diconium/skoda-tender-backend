@@ -5,10 +5,28 @@
             "name": "backendapp",
             "image": "195275646331.dkr.ecr.eu-central-1.amazonaws.com/skoda_backend:skoda_backend-latest",
             "cpu": 0,
-             "secrets": [{
-				"name": "backendappsecret",
-				"valueFrom": "arn:aws:secretsmanager:eu-central-1:195275646331:secret:backendappsecret-uD1jYp"
-			}],
+             "secrets": [
+		     {
+				"name": "POSTGRES_HOST",
+				"valueFrom": "arn:aws:secretsmanager:eu-central-1:195275646331:secret:backendappsecret-uD1jYp:POSTGRES_HOST::"
+			},
+		      {
+				"name": "POSTGRES_PORT",
+				"valueFrom": "arn:aws:secretsmanager:eu-central-1:195275646331:secret:backendappsecret-uD1jYp:POSTGRES_PORT::"
+			},
+		      {
+				"name": "POSTGRES_DB",
+				"valueFrom": "arn:aws:secretsmanager:eu-central-1:195275646331:secret:backendappsecret-uD1jYp:POSTGRES_DB::"
+			},
+		      {
+				"name": "POSTGRES_USER",
+				"valueFrom": "arn:aws:secretsmanager:eu-central-1:195275646331:secret:backendappsecret-uD1jYp:POSTGRES_USER::"
+			},
+		      {
+				"name": "POSTGRES_PASSWORD",
+				"valueFrom": "arn:aws:secretsmanager:eu-central-1:195275646331:secret:backendappsecret-uD1jYp:POSTGRES_PASSWORD::"
+			},
+	     ],
             "portMappings": [
                 {
                     "name": "80",
