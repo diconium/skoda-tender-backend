@@ -14,7 +14,7 @@ env:
   ECR_REPOSITORY: skoda_backend
   ECS_SERVICE: skoda-backend
   ECS_CLUSTER: skoda-tender-cluster
-  ECS_TASK_DEFINITION: skoda-backend:2                                           
+  ECS_TASK_DEFINITION: skoda-backend                                         
   CONTAINER_NAME: backendapp
 
 
@@ -63,7 +63,7 @@ jobs:
     - name: Deploy Amazon ECS task definition
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
-        task-definition: ${{ steps.task-def.outputs.task-definition }}
+        task-definition: skoda-backend.json
         service: ${{ env.ECS_SERVICE }}
         cluster: ${{ env.ECS_CLUSTER }}
         wait-for-service-stability: true
