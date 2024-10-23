@@ -1,0 +1,19 @@
+name: Pull Request Pipeline
+run-name: Pull Request Pipeline
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+#      - dev
+
+jobs:
+  call-branch-quality-workflow:
+    uses: ./.github/workflows/aux_branch_quality.workflow.yml
+    name: Branch Code Quality
+    with:
+      continue_on_error: false
+      check_blackduck: false
+      check_sonarqube: true
+    secrets: inherit
