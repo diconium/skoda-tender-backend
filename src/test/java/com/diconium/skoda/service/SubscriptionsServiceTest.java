@@ -84,7 +84,7 @@ class SubscriptionsServiceTest {
         assertEquals("1HGCM82633A123456", result.car().vin());
         assertEquals("test@example.com", result.user().email());
         assertEquals(1, result.subscriptions().size());
-        assertEquals("Service Name", result.subscriptions().getFirst().name());
+        assertEquals("Service Name", result.subscriptions().get(0).name());
     }
 
     @Test
