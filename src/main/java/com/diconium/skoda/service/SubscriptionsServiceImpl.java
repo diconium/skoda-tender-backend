@@ -6,10 +6,12 @@ import com.diconium.skoda.model.entity.CarConnectService;
 import com.diconium.skoda.model.entity.Product;
 import com.diconium.skoda.model.entity.User;
 import com.diconium.skoda.repository.CarConnectServiceRepository;
+import org.springframework.stereotype.Service;
+
 import java.util.Comparator;
 import java.util.List;
 
-@org.springframework.stereotype.Service
+@Service
 public class SubscriptionsServiceImpl implements SubscriptionsService {
 
     private final CarConnectServiceRepository carConnectServiceRepository;
