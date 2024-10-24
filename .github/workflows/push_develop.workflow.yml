@@ -6,9 +6,9 @@ on:
   push:
     branches:
       - dev
-  pull_request:
-    branches:
-      - dev
+#  pull_request:
+#    branches:
+#      - dev
 
 jobs:
   call-branch-quality-workflow:
@@ -16,8 +16,8 @@ jobs:
     name: Branch Code Quality
     with:
       continue_on_error: false
-      check_blackduck: false
-      check_sonarqube: false
+      check_blackduck: true
+      check_sonarqube: true
     secrets: inherit
 
   publish-deploy-dev:
