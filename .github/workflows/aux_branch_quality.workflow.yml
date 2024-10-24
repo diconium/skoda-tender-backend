@@ -37,7 +37,7 @@ jobs:
     if: ${{ inputs.check_sonarqube }}
 
     name: Run SonarQube
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     continue-on-error: ${{ inputs.continue_on_error }}
     needs:
       - tests
