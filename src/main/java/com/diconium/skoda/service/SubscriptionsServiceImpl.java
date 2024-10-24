@@ -20,6 +20,7 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
         this.carConnectServiceRepository = carConnectServiceRepository;
     }
 
+    /** {@inheritDoc} */
     @Override
     public SubscriptionsDto getAllServicesForVin(final String vin) {
         final List<CarConnectService> carConnectServices = carConnectServiceRepository.findByCarVin(vin);

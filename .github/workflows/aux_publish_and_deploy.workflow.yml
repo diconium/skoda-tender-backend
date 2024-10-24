@@ -37,7 +37,7 @@ jobs:
       - name: Build, Tag, and Push Docker Image to ECR
         id: build-image
         run: |
-          if [ "${{ github.event.inputs.release }}" = "production" ]; then
+          if [ "${{ inputs.stage }}" = "production" ]; then
             IMAGE_TAG=${{ steps.project-version.outputs.version }}
           else
             IMAGE_TAG=${{ github.sha }}
