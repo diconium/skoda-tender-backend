@@ -34,6 +34,7 @@
         <palantir.version>2.50.0</palantir.version>
         <sonar.maven.version>4.0.0.4121</sonar.maven.version>
         <jacoco.version>0.8.12</jacoco.version>
+        <firebase.version>9.4.1</firebase.version>
         <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
         <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
         <sonar.language>java</sonar.language>
@@ -80,6 +81,11 @@
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
             <version>${jacoco.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.firebase</groupId>
+            <artifactId>firebase-admin</artifactId>
+            <version>${firebase.version}</version>
         </dependency>
     </dependencies>
 

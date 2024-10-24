@@ -22,6 +22,16 @@ public class GlobalExceptionHandler {
                         VinNotFoundException.getStatusCode().value()));
     }
 
+    @ExceptionHandler(FirebaseException.class)
+    public ResponseEntity<ErrorResponseDto> handleVinNotFoundException(final FirebaseException exception) {
+        LOGGER.error(exception.getMessage(), exception);
+
+        return ResponseEntity.status(FirebaseException.getStatusCode())
+                .body(new ErrorResponseDto(
+                        exception.getMessage(),
+                        FirebaseException.getStatusCode().value()));
+    }
+
     @ExceptionHandler(Throwable.class)
     public ResponseEntity<ErrorResponseDto> handleException(final Throwable exception) {
         LOGGER.error(exception.getMessage(), exception);

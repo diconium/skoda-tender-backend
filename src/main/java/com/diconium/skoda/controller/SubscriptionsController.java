@@ -43,7 +43,7 @@ public class SubscriptionsController {
                                         schema = @Schema(implementation = ErrorResponseDto.class)))
             })
     @GetMapping("/{vin}/status")
-    public SubscriptionsDto status(final @PathVariable String vin) {
+    public SubscriptionsDto status(@PathVariable final String vin) {
         LOGGER.debug("Getting subscriptions for VIN: {}", vin);
 
         return subscriptionsService.getAllServicesForVin(vin);

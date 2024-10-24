@@ -21,7 +21,7 @@ on:
       check_sonarqube:
         description: "Check Sonarqube"
         required: true
-        default: false
+        default: true
         type: boolean
       stage:
         description: "Stage"
@@ -40,7 +40,7 @@ jobs:
     with:
       continue_on_error: ${{ inputs.continue_on_error || false }}
       check_blackduck: ${{ inputs.check_blackduck || true }}
-      check_sonarqube: ${{ inputs.check_sonarqube || false }}
+      check_sonarqube: ${{ inputs.check_sonarqube || true }}
     secrets: inherit
   
   publish-deploy-prod:
