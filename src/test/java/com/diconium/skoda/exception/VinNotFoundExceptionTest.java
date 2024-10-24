@@ -1,10 +1,10 @@
 package com.diconium.skoda.exception;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.http.HttpStatus;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.http.HttpStatus;
 
 class VinNotFoundExceptionTest {
 

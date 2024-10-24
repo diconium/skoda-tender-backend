@@ -1,0 +1,31 @@
+name: Push to Develop Pipeline
+run-name: Push to Develop Pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - dev
+#  pull_request:
+#    branches:
+#      - dev
+
+jobs:
+  call-branch-quality-workflow:
+    uses: ./.github/workflows/aux_branch_quality.workflow.yml
+    name: Branch Code Quality
+    with:
+      continue_on_error: false
+      check_blackduck: true
+      check_sonarqube: true
+    secrets: inherit
+
+  publish-deploy-dev:
+    uses: ./.github/workflows/aux_publish_and_deploy.workflow.yml
+    needs:
+      - call-branch-quality-workflow
+    name: Publish and Deploy Dev
+    with:
+      tag: latest
+      release: latest
+    secrets: inherit

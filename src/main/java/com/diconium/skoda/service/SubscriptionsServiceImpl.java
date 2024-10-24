@@ -28,8 +28,8 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
             throw new VinNotFoundException(vin);
         }
 
-        final Car car = carConnectServices.getFirst().getCar();
-        final User user = carConnectServices.getFirst().getCar().getUser();
+        final Car car = carConnectServices.get(0).getCar();
+        final User user = carConnectServices.get(0).getCar().getUser();
 
         final List<SubscriptionDto> subscriptionDtos = carConnectServices.stream()
                 .sorted(Comparator.comparing(s -> s.getId().getConnectServiceId()))
