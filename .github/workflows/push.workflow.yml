@@ -1,0 +1,53 @@
+name: Push to Default Branches Pipeline
+run-name: Push to Default Branches Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  workflow_dispatch:
+    inputs:
+      continue_on_error:
+        description: "Continue on error"
+        required: true
+        default: false
+        type: boolean
+      check_blackduck:
+        description: "Check Blackduck"
+        required: true
+        default: true
+        type: boolean
+      check_sonarqube:
+        description: "Check Sonarqube"
+        required: true
+        default: false
+        type: boolean
+      stage:
+        description: "Stage"
+        required: true
+        default: development
+        type: choice
+        options:
+          - development
+          - staging
+          - production
+
+jobs:
+  call-branch-quality-workflow:
+    uses: ./.github/workflows/aux_branch_quality.workflow.yml
+    name: Branch Code Quality
+    with:
+      continue_on_error: ${{ inputs.continue_on_error || false }}
+      check_blackduck: ${{ inputs.check_blackduck || true }}
+      check_sonarqube: ${{ inputs.check_sonarqube || false }}
+    secrets: inherit
+  
+  publish-deploy-prod:
+    uses: ./.github/workflows/aux_publish_and_deploy.workflow.yml
+    needs:
+      - call-branch-quality-workflow
+    name: Publish and Deploy ${{ inputs.stage || 'development' }}
+    with:
+      stage: ${{ inputs.stage || (github.ref == 'refs/heads/main' && 'production' || 'development') }}
+    secrets: inherit

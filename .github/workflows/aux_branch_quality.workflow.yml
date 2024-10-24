@@ -1,0 +1,94 @@
+name: Auxiliary Workflow to Assure Branch Code Quality
+run-name: Branch Code Quality
+
+on:
+  workflow_call:
+    inputs:
+      continue_on_error:
+        required: true
+        type: boolean
+      check_blackduck:
+        required: true
+        type: boolean
+      check_sonarqube:
+        required: true
+        type: boolean
+
+jobs:
+  tests:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ inputs.continue_on_error }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Run Unit Tests
+        run: mvn test -Dspotless.check.skip
+
+      - name: Run Linter
+        run: mvn spotless:check
+
+  sonarqube:
+    if: ${{ inputs.check_sonarqube }}
+
+    name: Run SonarQube
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ inputs.continue_on_error }}
+    needs:
+      - tests
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Run SonarQube
+        run: |
+          mvn verify sonar:sonar \
+            -Dsonar.projectKey=SKO-Connect_Services-Backend \
+            -Dsonar.token="${{ secrets.SONAR_TOKEN }}" \
+            -Dsonar.host.url="${{ vars.SONAR_HOST_URL }}" \
+            -Dspotless.check.skip
+
+  blackduck:
+    if: ${{ inputs.check_blackduck }}
+
+    name: Run BlackDuck
+    runs-on: ubuntu-latest
+    continue-on-error: ${{ inputs.continue_on_error }}
+    needs:
+      - tests
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Build with Maven
+        id: build
+        run: mvn clean install -DskipTests
+
+      - name: Black Duck Full Scan
+        uses: synopsys-sig/synopsys-action@v1.13.0
+        env:
+          DETECT_PROJECT_NAME: SKO-Connect_Services-Backend
+          DETECT_ACCURACY_REQUIRED: "NONE"
+        with:
+          blackduck_url: ${{ secrets.BLACKDUCK_URL }}
+          blackduck_token: ${{ secrets.BLACKDUCK_TOKEN }}
+          blackduck_scan_full: true
+          blackduck_args: "--detect.project.version.name=${{ github.ref_name }}"
+          blackduck_scan_failure_severities: "BLOCKER,CRITICAL,MAJOR"
+          blackduck_fixpr_enabled: false
