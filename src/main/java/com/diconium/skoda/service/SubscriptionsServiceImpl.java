@@ -7,12 +7,15 @@ import com.diconium.skoda.model.entity.CarConnectService;
 import com.diconium.skoda.model.entity.Product;
 import com.diconium.skoda.model.entity.User;
 import com.diconium.skoda.repository.CarConnectServiceRepository;
+import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
 public class SubscriptionsServiceImpl implements SubscriptionsService {
+
+    private static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
 
     private final CarConnectServiceRepository carConnectServiceRepository;
 
@@ -50,8 +53,8 @@ public class SubscriptionsServiceImpl implements SubscriptionsService {
                                         product.getImage()))
                                 .toList(),
                         carConnectService.getStatus(),
-                        carConnectService.getStartDate().toString(),
-                        carConnectService.getEndDate().toString()))
+                        carConnectService.getStartDate().format(DATE_TIME_FORMATTER),
+                        carConnectService.getEndDate().format(DATE_TIME_FORMATTER)))
                 .toList();
 
         return new SubscriptionsDto(
