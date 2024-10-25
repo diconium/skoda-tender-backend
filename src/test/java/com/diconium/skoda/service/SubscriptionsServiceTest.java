@@ -103,4 +103,20 @@ class SubscriptionsServiceTest {
                 RuntimeException.class, () -> subscriptionsService.getAllServicesForVin("1HGCM82633A123456"));
         assertEquals("Unexpected error", exception.getMessage());
     }
+
+    @Test
+    void getAllServicesForVin_shouldReturnFormattedDates() {
+        when(carConnectServiceRepository.findByCarVin("1HGCM82633A123456")).thenReturn(List.of(carConnectService));
+
+        var result = subscriptionsService.getAllServicesForVin("1HGCM82633A123456");
+
+        assertNotNull(result);
+        assertEquals(1, result.subscriptions().size());
+
+        var subscription = result.subscriptions().get(0);
+        var dateTimePattern = "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}";
+
+        assertTrue(subscription.startDate().matches(dateTimePattern), "Start date format is incorrect");
+        assertTrue(subscription.endDate().matches(dateTimePattern), "End date format is incorrect");
+    }
 }

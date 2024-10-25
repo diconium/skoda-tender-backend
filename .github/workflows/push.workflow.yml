@@ -49,5 +49,5 @@ jobs:
       - call-branch-quality-workflow
     name: Publish and Deploy ${{ inputs.stage || 'development' }}
     with:
-      stage: ${{ inputs.stage || (github.ref == 'refs/heads/main' && 'production' || 'development') }}
+      stage: ${{ inputs.stage || (github.ref == 'refs/heads/main' && 'staging' || 'development') }}
     secrets: inherit
